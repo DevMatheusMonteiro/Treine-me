@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --Dm-Sans: "DM Sans", sans-serif;
+  --Inter: "Inter", sans-serif;
+  --Mulish: "Mulish", sans-serif;
+  --Open-Sans: "Open Sans", sans-serif;
+  --green: #69b99d;
+  --light-green: #89c5cc;
+  --gray: #7d7987;
+}
+
+body {
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 90%,
+    rgb(238, 248, 245) 100%
+  );
+  background-color: whitesmoke;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 65px 1%;
+  row-gap: 20px;
+  min-height: 100vh; /* colocando min-vh aqui para o background não bugar */
+}
+
+.light-green {
+  color: var(--light-green);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav p {
+  font-family: var(--Inter);
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+nav ul {
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+nav ul li a {
+  font-family: var(--Mulish);
+  font-size: 1.125rem;
+  color: var(--gray);
+}
+
+nav ul li a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.title-link {
+  max-width: 489px;
+}
+
+.title-link h1 {
+  font-family: var(--Mulish);
+  font-size: 3.0625rem;
+  font-weight: normal;
+}
+
+.title-link p {
+  font-family: var(--Open-Sans);
+  color: var(--gray);
+  font-size: 0.875rem;
+  margin: 40px 0;
+  max-width: 438px;
+  line-height: 2;
+}
+
+.title-link p span {
+  font-weight: bold;
+}
+
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  font-family: var(--Dm-Sans);
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--green);
+  border-radius: 5px;
+  padding: 14px 32px;
+  text-align: center;
+  border: 0;
+}
+
+.whatsapp:hover {
+  cursor: pointer;
+  background-color: var(--light-green);
+}
+
+.fitness-woman {
+  max-width: 417px;
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+  font-family: var(--Open-Sans);
+  font-weight: normal;
+}
+
+footer p a {
+  color: #000;
+  font-weight: bold;
+}
+
+.balls-decoration {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .fitness-woman {
+    /* display: none; */
+    width: 100%;
+    max-height: 350px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .title-link {
+    text-align: center;
+  }
+
+  .title-link p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .whatsapp {
+    margin: 0 auto;
+  }
+
+  .balls-decoration {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 600px) {
+  .balls-decoration {
+    display: none;
+  }
+}
