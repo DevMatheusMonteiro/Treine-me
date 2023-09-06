@@ -1,3 +1,3 @@
 # Treine.me
 
-Página Web responsiva feita no Stage 02 do Explorer
+Responsive webpage made in Stage 02 of Explorer
